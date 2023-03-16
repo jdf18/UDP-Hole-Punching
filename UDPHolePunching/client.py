@@ -27,6 +27,7 @@ class Client:
 
     def console(self):
         self.create_listener()
+        self.punch_hole()
 
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.bind(("0.0.0.0",self.destination_port))
